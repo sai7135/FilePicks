@@ -24,7 +24,7 @@ public class FilePick extends CordovaPlugin {
     }
 
     private void coolMethod(String message, CallbackContext callbackContext) {
-        Toast.makeText(this,"Hellow world",Toast.LENGTH_LONG);
+        Toast.makeText(callbackContext,"Hellow world",Toast.LENGTH_LONG);
         if (message != null && message.length() > 0) {
             callbackContext.success(message);
         } else {
